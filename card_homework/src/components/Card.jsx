@@ -1,12 +1,15 @@
 import './Card.scss';
 
 const Card = props => {
+  const { header, body, text, isSelected } = props;
+  const thisSelected = isSelected ? 'selected' : '';
+
   return (
     <div className="cardContainer">
-      <div className={'card' + (props.isSelected ? 'selected' : '')}>
-        <div className="card-header"> {props.header}</div>
-        <div className="card-body">{props.body}</div>
-        <p clasNames="card-text">{props.text}</p>
+      <div className={'card ' + thisSelected}>
+        <div className="card-header"> {header}</div>
+        <div className="card-body">{body}</div>
+        <div clasName="card-text">{text}</div>
         <div className="card-footer">
           Объем включенного трафика не ограничен
         </div>

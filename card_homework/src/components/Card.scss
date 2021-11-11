@@ -8,20 +8,23 @@
   border: 1px solid black;
 }
 .selected {
-  background-color: rgb(255, 527, 55);
-  box-shadow: 10px 10px 5px rgb(155, 149, 149);
-  font-weight: bolder;
+  background-color: rgb(233, 68, 68);
+  transform: scale(1.1);
 }
 
 .card-header {
   height: 30px;
   padding: 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .card-body {
   height: 100px;
 }
-
+.card-text {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
 .card-footer {
   background-color: rgb(247, 241, 234);
   height: 40px;
