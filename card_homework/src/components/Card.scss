@@ -1,0 +1,25 @@
+$color: #4444;
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+}
+.card-header {
+  height: 30px;
+  padding: 15px;
+}
+
+.card-body {
+  height: 100px;
+}
+
+.card-footer {
+  background-color: rgb(247, 241, 234);
+  height: 40px;
+  padding: 10px;
+}
