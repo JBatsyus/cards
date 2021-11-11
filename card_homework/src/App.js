@@ -5,27 +5,39 @@ const cards = [
   {
     id: '1',
     header: 'Безлимитный 300',
-    body: 'руб 300/мес',
+    rubles: 'руб',
+    sum: '300',
+    month: '/мес',
     text: 'до 10 Мбит/сек',
+    colorBlueCard: true,
   },
   {
     id: '2',
     header: 'Безлимитный 450',
-    body: ' руб 450/мес',
+    rubles: 'руб',
+    sum: '450',
+    month: '/мес',
     text: 'до 50 Мбит/сек',
+    colorGreenCard: true,
   },
   {
     id: '3',
     header: 'Безлимитный 550',
-    body: ' руб 550/мес',
+    rubles: 'руб',
+    sum: '550',
+    month: '/мес',
     text: 'до 100 Мбит/сек',
     isSelected: true,
+    colorRedCard: true,
   },
   {
     id: '4',
     header: 'Безлимитный 1000',
-    body: ' руб 1000/мес',
+    rubles: 'руб',
+    sum: '1000',
+    month: '/мес',
     text: 'до 200 Мбит/сек',
+    colorBlackCard: true,
   },
 ];
 
@@ -36,10 +48,16 @@ function App() {
         <Card
           key={oneCard.id}
           header={oneCard.header}
-          body={oneCard.body}
+          rubles={oneCard.rubles}
+          sum={oneCard.sum}
+          month={oneCard.month}
           text={oneCard.text}
           footer={oneCard.footer}
           isSelected={oneCard.isSelected}
+          colorBlueCard={oneCard.colorBlueCard}
+          colorGreenCard={oneCard.colorGreenCard}
+          colorRedCard={oneCard.colorRedCard}
+          colorBlackCard={oneCard.colorBlackCard}
         />
       ))}
     </div>
