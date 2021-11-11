@@ -4,7 +4,7 @@ import './Card.scss';
 function Card(props) {
   return (
     <div className="cardContainer">
-      <div className="card">
+      <div className={'card'  + (props.isSelected ? 'selected' : '')} >
         <div className="card-header"> {props.header}</div>
         <div className="card-body">{props.body}</div>
         <p clasNames="card-text">{props.text}</p>

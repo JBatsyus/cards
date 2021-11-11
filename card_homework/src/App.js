@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-// import './components/Card.scss';
+import './components/Card.scss';
 import './components/Card';
 import Card from './components/Card';
 
@@ -23,6 +23,7 @@ const cards = [
     header: 'Безлимитный 550',
     body: ' руб 550/мес',
     text: 'до 100 Мбит/сек',
+    isSelected: true,
   },
   {
     id: '4',
@@ -42,6 +43,7 @@ function App() {
           body={oneCard.body}
           text={oneCard.text}
           footer={oneCard.footer}
+          isSelected={oneCard.isSelected}
         />
       ))}
     </div>
