@@ -1,10 +1,9 @@
-import React from 'react';
 import './Card.scss';
 
-function Card(props) {
+const Card = props => {
   return (
     <div className="cardContainer">
-      <div className={'card'  + (props.isSelected ? 'selected' : '')} >
+      <div className={'card' + (props.isSelected ? 'selected' : '')}>
         <div className="card-header"> {props.header}</div>
         <div className="card-body">{props.body}</div>
         <p clasNames="card-text">{props.text}</p>
@@ -14,5 +13,5 @@ function Card(props) {
       </div>
     </div>
   );
-}
+};
 export default Card;

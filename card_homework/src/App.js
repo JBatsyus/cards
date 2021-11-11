@@ -1,8 +1,4 @@
-import React from 'react';
-
 import './App.css';
-import './components/Card.scss';
-import './components/Card';
 import Card from './components/Card';
 
 const cards = [
