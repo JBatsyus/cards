@@ -5,9 +5,7 @@ const Card = props => {
     isSelected,
     header,
     text,
-    rubles,
     sum,
-    month,
     colorBlueCard,
     colorGreenCard,
     colorRedCard,
@@ -22,16 +20,18 @@ const Card = props => {
 
   return (
     <div className="cardContainer">
-      <div className={'card ' + thisSelected}>
+      <div
+        className={
+          'card ' + blueCard + greenCard + redCard + thisSelected + blackCard
+        }
+      >
         <div className="card-header"> {header}</div>
-        <div
-          className={'card-body' + blueCard + greenCard + redCard + blackCard}
-        >
-          <div className="card-rubles">{rubles}</div>
+        <div className="card-body">
+          <div className="card-rubles">руб</div>
           <div className="card-sum">{sum}</div>
-          <div className="card-month ">{month}</div>
+          <div className="card-month ">/мес</div>
         </div>
-        <div clasName="card-text">{text}</div>
+        <div className="card-text">{text}</div>
         <div className="card-footer">
           Объем включенного трафика не ограничен
         </div>
