@@ -1,6 +1,9 @@
 .App {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
   margin: 20% auto;
+}
+body {
+	background: linear-gradient(3deg, #e6d16c, #16014c);
 }

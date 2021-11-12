@@ -1,37 +1,6 @@
 import './App.css';
 import Card from './components/Card';
-
-const cards = [
-  {
-    id: '1',
-    header: 'Безлимитный 300',
-    sum: '300',
-    text: 'до 10 Мбит/сек',
-    colorBlueCard: true,
-  },
-  {
-    id: '2',
-    header: 'Безлимитный 450',
-    sum: '450',
-    text: 'до 50 Мбит/сек',
-    colorGreenCard: true,
-  },
-  {
-    id: '3',
-    header: 'Безлимитный 550',
-    sum: '550',
-    text: 'до 100 Мбит/сек',
-    isSelected: true,
-    colorRedCard: true,
-  },
-  {
-    id: '4',
-    header: 'Безлимитный 1000',
-    sum: '1000',
-    text: 'до 200 Мбит/сек',
-    colorBlackCard: true,
-  },
-];
+import { cards } from './components/Cards';
 
 function App() {
   return (
@@ -40,6 +9,10 @@ function App() {
         <Card
           key={oneCard.id}
           header={oneCard.header}
+          blueВackgroundHeader={oneCard.blueВackgroundHeader}
+          greenВackgroundHeader={oneCard.greenВackgroundHeader}
+          redВackgroundHeader={oneCard.redВackgroundHeader}
+          blackВackgroundHeader={oneCard.blackВackgroundHeader}
           rubles={oneCard.rubles}
           sum={oneCard.sum}
           month={oneCard.month}
