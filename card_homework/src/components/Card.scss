@@ -1,94 +1,90 @@
 $fontColor: rgb(255, 255, 255);
 
-
 @mixin position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
 .cardContainer {
-  @include position();
-  .card {
-    border: 1px solid rgb(255, 255, 255);
-  }
+    @include position();
+    .card {
+        border: 1px solid rgb(255, 255, 255);
+    }
 }
 
 .card-header {
-  color: $fontColor;
-  font-size: 20px;
-  padding: 15px;
-  border-bottom: 2px solid rgb(255, 255, 255);
-  height: 30px;
-  text-align: center;
-  @include position();
+    color: $fontColor;
+    font-size: 20px;
+    padding: 15px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 30px;
+    text-align: center;
+    @include position();
 }
 
 .card-body {
-  height: 150px;
-  @include position();
+    height: 150px;
+    @include position();
 
-  .card-rubles {
-    color: $fontColor;
-    margin-top: -40px;
-  }
-  .card-sum {
-    color: $fontColor;
-    font-size: 50px;
-  }
-  .card-month {
-    color: $fontColor;
-    margin-bottom: -30px;
-  }
+    .card-rubles {
+        color: $fontColor;
+        margin-top: -40px;
+    }
+    .card-sum {
+        color: $fontColor;
+        font-size: 50px;
+    }
+    .card-month {
+        color: $fontColor;
+        margin-bottom: -30px;
+    }
 }
 
 .card-text {
-  @include position();
-  height: 50px;
-  background-color: rgb(252, 252, 252);
+    @include position();
+    height: 50px;
+    background-color: rgb(252, 252, 252);
 }
 
 .card-footer {
-  background-color: rgb(247, 241, 234);
-  padding: 15px;
-  text-align: center;
-  line-height: 2;
-  height: 50px;
-  @include position();
+    background-color: rgb(247, 241, 234);
+    padding: 15px;
+    text-align: center;
+    line-height: 2;
+    height: 50px;
+    @include position();
 }
 .selected {
-  transform: scale(1.1);
-  box-shadow: 0 0 3px rgb(88, 87, 87);
+    transform: scale(1.1);
+    box-shadow: 0 0 3px rgb(88, 87, 87);
 }
-
 
 // расцветка
 
 .colorBlue {
-  background-color: rgb(44 193 213);
+    background-color: rgb(44 193 213);
 }
 .colorHeaderBlue {
-  background-color: #219cab;
+    background-color: #219cab;
 }
 
 .colorGreen {
-  background-color: rgb(34 174 143);
+    background-color: rgb(34 174 143);
 }
 .colorHeaderGreen {
-  background-color: rgb(31 137 114);
+    background-color: rgb(31 137 114);
 }
 
 .colorRed {
-  background-color: rgb(244 105 95);
+    background-color: rgb(244 105 95);
 }
 .colorHeaderRed {
-  background-color: rgb(196 85 78);
+    background-color: rgb(196 85 78);
 }
 .colorBlack {
-  background-color: rgb(40 47 55);
+    background-color: rgb(40 47 55);
 }
 .colorHeaderBlack {
-  background-color: #282f37;
+    background-color: #282f37;
 }
