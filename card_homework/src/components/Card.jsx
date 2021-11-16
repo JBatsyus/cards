@@ -4,31 +4,19 @@ import "./Card.scss";
 const Card = props => {
     const [pressed, setPressed] = useState(false);
 
-    const {
-        header,
-        text,
-        sum,
-        colorBlueCard,
-        colorGreenCard,
-        colorRedCard,
-        colorBlackCard,
-        blueВackgroundHeader,
-        greenВackgroundHeader,
-        redВackgroundHeader,
-        blackВackgroundHeader,
-    } = props;
+    const { id, header, text, sum } = props;
 
-    const blueCard = colorBlueCard ? "colorBlue" : "";
-    const greenCard = colorGreenCard ? "colorGreen" : "";
-    const redCard = colorRedCard ? "colorRed" : "";
-    const blackCard = colorBlackCard ? "colorBlack" : "";
+    const blueCard = id === "1" ? "colorBlue" : "";
+    const greenCard = id === "2" ? "colorGreen" : "";
+    const redCard = id === "3" ? "colorRed" : "";
+    const blackCard = id === "4" ? "colorBlack" : "";
 
     const thisSelected = pressed ? " selected" : "";
 
-    const blueBack = blueВackgroundHeader ? " colorHeaderBlue" : "";
-    const greenBack = greenВackgroundHeader ? " colorHeaderGreen" : "";
-    const redBack = redВackgroundHeader ? " colorHeaderRed" : "";
-    const blackBack = blackВackgroundHeader ? " colorHeaderBlack" : "";
+    const blueBack = id === "1" ? " colorHeaderBlue" : "";
+    const greenBack = id === "2" ? " colorHeaderGreen" : "";
+    const redBack = id === "3" ? " colorHeaderRed" : "";
+    const blackBack = id === "4" ? " colorHeaderBlack" : "";
 
     const handleChange = () => {
         setPressed(!pressed);
