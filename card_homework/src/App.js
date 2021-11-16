@@ -18,7 +18,7 @@ function App() {
                     month={oneCard.month}
                     text={oneCard.text}
                     footer={oneCard.footer}
-                    isSelected={oneCard.isSelected}
+                    pressed={oneCard.pressed}
                     colorBlueCard={oneCard.colorBlueCard}
                     colorGreenCard={oneCard.colorGreenCard}
                     colorRedCard={oneCard.colorRedCard}

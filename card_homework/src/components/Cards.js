@@ -6,6 +6,7 @@ export const cards = [
         text: "до 10 Мбит/сек",
         blueВackgroundHeader: true,
         colorBlueCard: true,
+        pressed: false,
     },
     {
         id: "2",
@@ -14,15 +15,17 @@ export const cards = [
         text: "до 50 Мбит/сек",
         greenВackgroundHeader: true,
         colorGreenCard: true,
+        pressed: false,
     },
     {
         id: "3",
         header: "Безлимитный 550",
         sum: "550",
         text: "до 100 Мбит/сек",
-        isSelected: true,
+        // isSelected: true,
         redВackgroundHeader: true,
         colorRedCard: true,
+        pressed: false,
     },
     {
         id: "4",
@@ -31,5 +34,6 @@ export const cards = [
         text: "до 200 Мбит/сек",
         blackВackgroundHeader: true,
         colorBlackCard: true,
+        pressed: false,
     },
 ];

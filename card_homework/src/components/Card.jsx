@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import "./Card.scss";
 
 const Card = props => {
+    const [pressed, setPressed] = useState(false);
+
     const {
-        isSelected,
         header,
         text,
         sum,
@@ -20,22 +22,27 @@ const Card = props => {
     const greenCard = colorGreenCard ? "colorGreen" : "";
     const redCard = colorRedCard ? "colorRed" : "";
     const blackCard = colorBlackCard ? "colorBlack" : "";
-    const thisSelected = isSelected ? " selected" : "";
+
+    const thisSelected = pressed ? " selected" : "";
 
     const blueBack = blueВackgroundHeader ? " colorHeaderBlue" : "";
     const greenBack = greenВackgroundHeader ? " colorHeaderGreen" : "";
     const redBack = redВackgroundHeader ? " colorHeaderRed" : "";
     const blackBack = blackВackgroundHeader ? " colorHeaderBlack" : "";
 
+    const handleChange = () => {
+        setPressed(!pressed);
+    };
+
     return (
-        <div className="cardContainer">
+        <div className={"cardContainer" + thisSelected} onClick={handleChange}>
             <div
                 className={
                     "card " +
                     blueCard +
                     greenCard +
                     redCard +
-                    thisSelected +
+                    // thisSelected +
                     blackCard
                 }
             >
@@ -63,4 +70,5 @@ const Card = props => {
         </div>
     );
 };
+
 export default Card;
