@@ -4,7 +4,6 @@ export const cards = [
         header: "Безлимитный 300",
         sum: "300",
         text: "до 10 Мбит/сек",
-        blueВackgroundHeader: true,
         pressed: false,
     },
     {
@@ -12,7 +11,6 @@ export const cards = [
         header: "Безлимитный 450",
         sum: "450",
         text: "до 50 Мбит/сек",
-        greenВackgroundHeader: true,
         pressed: false,
     },
     {
@@ -20,8 +18,6 @@ export const cards = [
         header: "Безлимитный 550",
         sum: "550",
         text: "до 100 Мбит/сек",
-        // isSelected: true,
-        redВackgroundHeader: true,
         pressed: false,
     },
     {
@@ -29,7 +25,6 @@ export const cards = [
         header: "Безлимитный 1000",
         sum: "1000",
         text: "до 200 Мбит/сек",
-        blackВackgroundHeader: true,
         pressed: false,
     },
 ];
